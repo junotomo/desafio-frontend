@@ -1,0 +1,30 @@
+@import "@material/theme/color-palette";
+
+
+// Svelte Colors!
+$mdc-theme-primary: #2a9d8f;
+$mdc-theme-secondary: #e63946;
+$mdc-theme-background: #2a9d8f;
+$mdc-theme-surface: #ffed00;
+
+$mdc-theme-error: $material-color-red-900;
+
+
+// tab theme
+@import "@material/tab/mdc-tab";
+  .mdc-tab{
+    background: $mdc-theme-primary;
+    font-weight: bold;
+  }
+  .mdc-tab .mdc-tab__text-label{
+    color: #ffff;
+  }
+
+  .mdc-tab-indicator .mdc-tab-indicator__content--underline{
+    border-color: #e76f51;
+    border-width: 5px;
+  }
+
+  .mdc-tab__ripple:after, .mdc-tab__ripple:before {
+    background-color:#ffff;
+  }
